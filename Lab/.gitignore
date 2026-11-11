@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Lab6 dataset (download separately, see README)
+Lab6/human+activity+recognition+using+smartphones/
+
+# ESP32 firmware images
+*.bin
+
+# Experiment output (regenerated when the scripts run)
+Lab6/results_gemini/
+Lab6/results_checkpoint2/

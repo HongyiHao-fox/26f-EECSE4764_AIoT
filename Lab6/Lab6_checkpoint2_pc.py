@@ -7,12 +7,6 @@ from pathlib import Path
 
 import requests
 
-
-
-
-
-
-
 ESP32_IP = "YOUR_ESP32_IP"
 ESP32_PORT = 8765
 
@@ -38,11 +32,6 @@ ACTIVITIES = [
     "STANDING",
     "LAYING"
 ]
-
-
-
-
-
 
 def send_json(sock, obj):
     data = json.dumps(obj) + "\n"
@@ -73,11 +62,6 @@ def receive_json(sock):
     return json.loads(
         data.decode("utf-8")
     )
-
-
-
-
-
 
 def build_prompt(samples):
 
@@ -168,11 +152,6 @@ Output the classification now.
 """
 
     return prompt.strip()
-
-
-
-
-
 
 def call_gemini(prompt):
 
@@ -273,11 +252,6 @@ def call_gemini(prompt):
         + str(last_error)
     )
 
-
-
-
-
-
 def parse_activity(text):
 
     options = "|".join(
@@ -304,11 +278,6 @@ def parse_activity(text):
         return cleaned
 
     return "UNKNOWN"
-
-
-
-
-
 
 def save_result(samples, prompt, response, activity):
 
@@ -351,11 +320,6 @@ def save_result(samples, prompt, response, activity):
         )
 
     print("Saved:", filename)
-
-
-
-
-
 
 def classify_har():
 
@@ -433,11 +397,6 @@ def classify_har():
         )
 
     print("Checkpoint 2 cycle finished")
-
-
-
-
-
 
 def main():
 

@@ -17,7 +17,7 @@ import whisper
 from openai import OpenAI
 
 # IMPORTANT: replace with the IP currently printed by the ESP32 server.
-ESP32_IP = os.getenv("ESP32_IP", "YOUR_ESP32_IP")
+ESP32_IP = os.getenv("ESP32_IP", "10.206.231.17")
 ESP32_PORT = 8080
 ESP32_URL = f"http://{ESP32_IP}:{ESP32_PORT}/"
 HTTP_TIMEOUT = 12

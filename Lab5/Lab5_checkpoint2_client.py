@@ -2,7 +2,7 @@
 import json
 import urllib.request
 
-ESP32_IP = 'YOUR_ESP32_IP'  # Replace with the IP printed in Thonny
+ESP32_IP = '10.206.104.232'  # Replace with the IP printed in Thonny
 URL = 'http://%s:8080/' % ESP32_IP
 
 

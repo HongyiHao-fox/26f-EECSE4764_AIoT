@@ -23,7 +23,7 @@ SPI_MISO_PIN = 21
 SPI_CS_PIN = 15
 
 WIFI_SSID = "Columbia University"
-NTFY_TOPIC = "columbia-aiot-lab4-change-this-82641"
+NTFY_TOPIC = "columbia-aiot-zrz-82641"
 
 OLED_WIDTH = 128
 OLED_HEIGHT = 32
